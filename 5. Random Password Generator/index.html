@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Random Password Generator</h1>
+    <label for="passwordLength">Password Length:</label>
+    <input type="number" id="passwordLength" value="12" min="8" max="20" />
+    <button id="generateButton">Generate Password</button>
+    <div class="password-display">
+        <input type="text" id="password" readonly />
+    </div>
+</div>
+
+  <!-- The compiled JS from script.ts will go here -->
+  <script src="script.js"></script>
+</body>
+</html>
