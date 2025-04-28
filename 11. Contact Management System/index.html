@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Book</h1>
+
+    <div class="form-container">
+      <h2>Add Contact</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="phone" placeholder="Phone" required pattern="\d{10}" title="Phone number must be exactly 10 digits" />
+
+
+        <select id="label" name="label" required>
+          <option value="">Select Label</option>
+          <option value="Family">Family</option>
+          <option value="Friend">Friend</option>
+          <option value="Business">Business</option>
+          <option value="Work">Work</option>
+        </select>
+
+        <button type="submit">Add Contact</button>
+      </form>
+    </div>
+
+    <div class="contact-list">
+      <h2>Contacts</h2>
+      <table id="contactTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Label</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Contacts will be added here dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
